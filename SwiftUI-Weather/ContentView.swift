@@ -14,25 +14,21 @@ struct ContentView: View {
                                       temparature: isNight ? 24 : 34)
                 
                 HStack(spacing: 20) {
-                    WeatherDayView(dayOfWeek: "TUE",
-                                   imageName: "cloud.sun.fill",
-                                   temparature: 30)
-                    
-                    WeatherDayView(dayOfWeek: "WED",
-                                   imageName: "sun.max.fill",
-                                   temparature: 34)
-                    
-                    WeatherDayView(dayOfWeek: "THU",
-                                   imageName: "cloud.bolt.fill",
-                                   temparature: 25)
-                    
-                    WeatherDayView(dayOfWeek: "FRI",
-                                   imageName: "cloud.snow.fill",
-                                   temparature: 20)
-                    
-                    WeatherDayView(dayOfWeek: "SAT",
-                                   imageName: "wind",
-                                   temparature: 28)
+                    WeatherDayView(weather: Weather(dayOfWeek: "TUE",
+                                                    imageName: "cloud.sun.fill",
+                                                    temparature: 30))
+                    WeatherDayView(weather: Weather(dayOfWeek: "WED",
+                                                    imageName: "sun.max.fill",
+                                                    temparature: 34))
+                    WeatherDayView(weather: Weather(dayOfWeek: "THU",
+                                                    imageName: "cloud.bolt.fill",
+                                                    temparature: 25))
+                    WeatherDayView(weather: Weather(dayOfWeek: "FRI",
+                                                    imageName: "cloud.snow.fill",
+                                                    temparature: 20))
+                    WeatherDayView(weather: Weather(dayOfWeek: "SAT",
+                                                    imageName: "wind",
+                                                    temparature: 28))
                 }
                 
                 Spacer()
@@ -60,21 +56,19 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct WeatherDayView: View {
-    var dayOfWeek: String
-    var imageName: String
-    var temparature: Int
+    var weather: Weather
     
     var body: some View {
         VStack(spacing: 8) {
-            Text(dayOfWeek)
+            Text(weather.dayOfWeek)
                 .font(.system(size: 16, weight: .medium, design: .default))
                 .foregroundColor(.white)
-            Image(systemName: imageName)
+            Image(systemName: weather.imageName)
                 .renderingMode(.original)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
-            Text("\(temparature)°")
+            Text("\(weather.temparature)°")
                 .font(.system(size: 28, weight: .medium, design: .default))
                 .foregroundColor(.white)
         }.frame(height: 180)

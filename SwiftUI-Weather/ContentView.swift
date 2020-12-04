@@ -46,7 +46,17 @@ struct ContentView: View {
                                    temparature: 28)
                 }
                 
+                Spacer()
                 
+                Button {
+                    print("Tapped")
+                } label: {
+                    Text("Change Day Time")
+                        .frame(width: 280, height: 50)
+                        .background(Color.white)
+                        .font(.system(size: 20, weight: .bold, design: .default))
+                        .cornerRadius(10)
+                }
                 
                 Spacer()
             }

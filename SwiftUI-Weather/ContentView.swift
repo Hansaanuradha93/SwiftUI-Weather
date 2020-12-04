@@ -3,6 +3,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var isNight = false
     
+    private let weatherArray = Weather.getWeather()
+    
     var body: some View {
         ZStack {
             BackgroundView(isNight: $isNight)
@@ -14,21 +16,9 @@ struct ContentView: View {
                                       temparature: isNight ? 24 : 34)
                 
                 HStack(spacing: 20) {
-                    WeatherDayView(weather: Weather(dayOfWeek: "TUE",
-                                                    imageName: "cloud.sun.fill",
-                                                    temparature: 30))
-                    WeatherDayView(weather: Weather(dayOfWeek: "WED",
-                                                    imageName: "sun.max.fill",
-                                                    temparature: 34))
-                    WeatherDayView(weather: Weather(dayOfWeek: "THU",
-                                                    imageName: "cloud.bolt.fill",
-                                                    temparature: 25))
-                    WeatherDayView(weather: Weather(dayOfWeek: "FRI",
-                                                    imageName: "cloud.snow.fill",
-                                                    temparature: 20))
-                    WeatherDayView(weather: Weather(dayOfWeek: "SAT",
-                                                    imageName: "wind",
-                                                    temparature: 28))
+                    ForEach(weatherArray) { weather in
+                            WeatherDayView(weather: weather)
+                    }
                 }
                 
                 Spacer()

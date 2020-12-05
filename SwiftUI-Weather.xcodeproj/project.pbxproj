@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4718704B257AA63900CDC923 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4718704A257AA63900CDC923 /* WeatherButton.swift */; };
 		4718704F257AAD4600CDC923 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4718704E257AAD4600CDC923 /* Weather.swift */; };
-		4769CB9C257BD7F00082DF2F /* LandMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4769CB9B257BD7F00082DF2F /* LandMarkView.swift */; };
+		4769CB9C257BD7F00082DF2F /* LandMarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4769CB9B257BD7F00082DF2F /* LandMarkDetail.swift */; };
 		4769CB9F257BDB480082DF2F /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4769CB9E257BDB480082DF2F /* CircleImage.swift */; };
 		4769CBA2257BDCD90082DF2F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4769CBA1257BDCD90082DF2F /* MapView.swift */; };
 		4769CBB8257BE3DE0082DF2F /* stmarylake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4769CBAB257BE3DD0082DF2F /* stmarylake.jpg */; };
@@ -25,6 +25,8 @@
 		4769CBC2257BE3DE0082DF2F /* umbagog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4769CBB5257BE3DD0082DF2F /* umbagog.jpg */; };
 		4769CBC3257BE3DE0082DF2F /* silversalmoncreek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4769CBB6257BE3DD0082DF2F /* silversalmoncreek.jpg */; };
 		4769CBC4257BE3DE0082DF2F /* hiddenlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4769CBB7257BE3DE0082DF2F /* hiddenlake.jpg */; };
+		4769CBCB257BE49D0082DF2F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4769CBCA257BE49D0082DF2F /* Data.swift */; };
+		4769CBCF257BE4BD0082DF2F /* LandMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4769CBCE257BE4BD0082DF2F /* LandMark.swift */; };
 		47E2A1A82578D02F007952C8 /* SwiftUI_WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E2A1A72578D02F007952C8 /* SwiftUI_WeatherApp.swift */; };
 		47E2A1AA2578D02F007952C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E2A1A92578D02F007952C8 /* ContentView.swift */; };
 		47E2A1AC2578D031007952C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E2A1AB2578D031007952C8 /* Assets.xcassets */; };
@@ -34,7 +36,7 @@
 /* Begin PBXFileReference section */
 		4718704A257AA63900CDC923 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 		4718704E257AAD4600CDC923 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		4769CB9B257BD7F00082DF2F /* LandMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMarkView.swift; sourceTree = "<group>"; };
+		4769CB9B257BD7F00082DF2F /* LandMarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMarkDetail.swift; sourceTree = "<group>"; };
 		4769CB9E257BDB480082DF2F /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		4769CBA1257BDCD90082DF2F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4769CBAB257BE3DD0082DF2F /* stmarylake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stmarylake.jpg; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		4769CBB5257BE3DD0082DF2F /* umbagog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = umbagog.jpg; sourceTree = "<group>"; };
 		4769CBB6257BE3DD0082DF2F /* silversalmoncreek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = silversalmoncreek.jpg; sourceTree = "<group>"; };
 		4769CBB7257BE3DE0082DF2F /* hiddenlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hiddenlake.jpg; sourceTree = "<group>"; };
+		4769CBCA257BE49D0082DF2F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		4769CBCE257BE4BD0082DF2F /* LandMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMark.swift; sourceTree = "<group>"; };
 		47E2A1A42578D02F007952C8 /* SwiftUI-Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E2A1A72578D02F007952C8 /* SwiftUI_WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_WeatherApp.swift; sourceTree = "<group>"; };
 		47E2A1A92578D02F007952C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				4718704E257AAD4600CDC923 /* Weather.swift */,
+				4769CBCA257BE49D0082DF2F /* Data.swift */,
+				4769CBCE257BE4BD0082DF2F /* LandMark.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,15 +132,15 @@
 		47E2A1A62578D02F007952C8 /* SwiftUI-Weather */ = {
 			isa = PBXGroup;
 			children = (
-				4769CBAA257BE3C80082DF2F /* Resources */,
 				4718704D257AAD2B00CDC923 /* Models */,
+				4769CBAA257BE3C80082DF2F /* Resources */,
 				4769CBA9257BE39F0082DF2F /* Supporting Views */,
 				47E2A1A72578D02F007952C8 /* SwiftUI_WeatherApp.swift */,
 				47E2A1A92578D02F007952C8 /* ContentView.swift */,
 				47E2A1AB2578D031007952C8 /* Assets.xcassets */,
 				47E2A1B02578D031007952C8 /* Info.plist */,
 				47E2A1AD2578D031007952C8 /* Preview Content */,
-				4769CB9B257BD7F00082DF2F /* LandMarkView.swift */,
+				4769CB9B257BD7F00082DF2F /* LandMarkDetail.swift */,
 			);
 			path = "SwiftUI-Weather";
 			sourceTree = "<group>";
@@ -232,10 +238,12 @@
 				4769CBA2257BDCD90082DF2F /* MapView.swift in Sources */,
 				4718704F257AAD4600CDC923 /* Weather.swift in Sources */,
 				47E2A1AA2578D02F007952C8 /* ContentView.swift in Sources */,
+				4769CBCF257BE4BD0082DF2F /* LandMark.swift in Sources */,
 				47E2A1A82578D02F007952C8 /* SwiftUI_WeatherApp.swift in Sources */,
-				4769CB9C257BD7F00082DF2F /* LandMarkView.swift in Sources */,
+				4769CB9C257BD7F00082DF2F /* LandMarkDetail.swift in Sources */,
 				4718704B257AA63900CDC923 /* WeatherButton.swift in Sources */,
 				4769CB9F257BDB480082DF2F /* CircleImage.swift in Sources */,
+				4769CBCB257BE49D0082DF2F /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct LandMarkView: View {
+struct LandMarkDetail: View {
     var body: some View {
         VStack {
             MapView()
@@ -31,6 +31,6 @@ struct LandMarkView: View {
 
 struct LandMarkView_Previews: PreviewProvider {
     static var previews: some View {
-        LandMarkView()
+        LandMarkDetail()
     }
 }

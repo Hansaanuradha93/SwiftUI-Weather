@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct LandMarkRow: View {
+struct LandmarkRow: View {
     var landMark: Landmark
     
     var body: some View {
@@ -14,12 +14,12 @@ struct LandMarkRow: View {
     }
 }
 
-struct LandMarkRow_Previews: PreviewProvider {
+struct LandmarkRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            LandMarkRow(landMark: landmarkData[0])
+            LandmarkRow(landMark: landmarkData[0])
             
-            LandMarkRow(landMark: landmarkData[1])
+            LandmarkRow(landMark: landmarkData[1])
         }
         .previewLayout(.fixed(width: 300, height: 70))
         

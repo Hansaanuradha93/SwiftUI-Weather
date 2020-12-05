@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4718704B257AA63900CDC923 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4718704A257AA63900CDC923 /* WeatherButton.swift */; };
 		4718704F257AAD4600CDC923 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4718704E257AAD4600CDC923 /* Weather.swift */; };
+		4769CB9C257BD7F00082DF2F /* LandMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4769CB9B257BD7F00082DF2F /* LandMarkView.swift */; };
+		4769CB9F257BDB480082DF2F /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4769CB9E257BDB480082DF2F /* CircleImage.swift */; };
+		4769CBA2257BDCD90082DF2F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4769CBA1257BDCD90082DF2F /* MapView.swift */; };
 		47E2A1A82578D02F007952C8 /* SwiftUI_WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E2A1A72578D02F007952C8 /* SwiftUI_WeatherApp.swift */; };
 		47E2A1AA2578D02F007952C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E2A1A92578D02F007952C8 /* ContentView.swift */; };
 		47E2A1AC2578D031007952C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E2A1AB2578D031007952C8 /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* Begin PBXFileReference section */
 		4718704A257AA63900CDC923 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 		4718704E257AAD4600CDC923 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		4769CB9B257BD7F00082DF2F /* LandMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMarkView.swift; sourceTree = "<group>"; };
+		4769CB9E257BDB480082DF2F /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		4769CBA1257BDCD90082DF2F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		47E2A1A42578D02F007952C8 /* SwiftUI-Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E2A1A72578D02F007952C8 /* SwiftUI_WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_WeatherApp.swift; sourceTree = "<group>"; };
 		47E2A1A92578D02F007952C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +77,9 @@
 				47E2A1B02578D031007952C8 /* Info.plist */,
 				47E2A1AD2578D031007952C8 /* Preview Content */,
 				4718704A257AA63900CDC923 /* WeatherButton.swift */,
+				4769CB9B257BD7F00082DF2F /* LandMarkView.swift */,
+				4769CB9E257BDB480082DF2F /* CircleImage.swift */,
+				4769CBA1257BDCD90082DF2F /* MapView.swift */,
 			);
 			path = "SwiftUI-Weather";
 			sourceTree = "<group>";
@@ -152,10 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4769CBA2257BDCD90082DF2F /* MapView.swift in Sources */,
 				4718704F257AAD4600CDC923 /* Weather.swift in Sources */,
 				47E2A1AA2578D02F007952C8 /* ContentView.swift in Sources */,
 				47E2A1A82578D02F007952C8 /* SwiftUI_WeatherApp.swift in Sources */,
+				4769CB9C257BD7F00082DF2F /* LandMarkView.swift in Sources */,
 				4718704B257AA63900CDC923 /* WeatherButton.swift in Sources */,
+				4769CB9F257BDB480082DF2F /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -94,6 +94,7 @@
 				4769CB9E257BDB480082DF2F /* CircleImage.swift */,
 				4769CBA1257BDCD90082DF2F /* MapView.swift */,
 				4769CBD2257BE5910082DF2F /* LandMarkRow.swift */,
+				4769CB9B257BD7F00082DF2F /* LandMarkDetail.swift */,
 				4769CBD5257BE7A80082DF2F /* LandmarkList.swift */,
 			);
 			path = "Supporting Views";
@@ -146,7 +147,6 @@
 				47E2A1AB2578D031007952C8 /* Assets.xcassets */,
 				47E2A1B02578D031007952C8 /* Info.plist */,
 				47E2A1AD2578D031007952C8 /* Preview Content */,
-				4769CB9B257BD7F00082DF2F /* LandMarkDetail.swift */,
 			);
 			path = "SwiftUI-Weather";
 			sourceTree = "<group>";

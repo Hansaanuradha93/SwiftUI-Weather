@@ -33,6 +33,7 @@
 		47E2A1AA2578D02F007952C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E2A1A92578D02F007952C8 /* ContentView.swift */; };
 		47E2A1AC2578D031007952C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E2A1AB2578D031007952C8 /* Assets.xcassets */; };
 		47E2A1AF2578D031007952C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E2A1AE2578D031007952C8 /* Preview Assets.xcassets */; };
+		47E3CCF52590EAD00037B6E9 /* JapanTravelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E3CCF42590EAD00037B6E9 /* JapanTravelApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		47E2A1AB2578D031007952C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47E2A1AE2578D031007952C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		47E2A1B02578D031007952C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47E3CCF42590EAD00037B6E9 /* JapanTravelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanTravelApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				47E2A1AB2578D031007952C8 /* Assets.xcassets */,
 				47E2A1B02578D031007952C8 /* Info.plist */,
 				47E2A1AD2578D031007952C8 /* Preview Content */,
+				47E3CCF42590EAD00037B6E9 /* JapanTravelApp.swift */,
 			);
 			path = "SwiftUI-Weather";
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E3CCF52590EAD00037B6E9 /* JapanTravelApp.swift in Sources */,
 				4769CBA2257BDCD90082DF2F /* MapView.swift in Sources */,
 				4769CBE3257BEDF80082DF2F /* Landmark.swift in Sources */,
 				4769CBD6257BE7A80082DF2F /* LandmarkList.swift in Sources */,

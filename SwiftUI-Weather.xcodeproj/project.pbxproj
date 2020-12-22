@@ -89,6 +89,25 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4750B98A2592506C000B6634 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				47E2A1AB2578D031007952C8 /* Assets.xcassets */,
+				47E2A1B02578D031007952C8 /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		4750B98C259250E3000B6634 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47E2A1A72578D02F007952C8 /* SwiftUI_WeatherApp.swift */,
+				47E2A1A92578D02F007952C8 /* ContentView.swift */,
+				47E3CCF42590EAD00037B6E9 /* JapanTravelApp.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4769CBA9257BE39F0082DF2F /* Supporting Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,15 +160,12 @@
 		47E2A1A62578D02F007952C8 /* SwiftUI-Weather */ = {
 			isa = PBXGroup;
 			children = (
+				4750B98C259250E3000B6634 /* Views */,
 				4718704D257AAD2B00CDC923 /* Models */,
 				4769CBAA257BE3C80082DF2F /* Resources */,
 				4769CBA9257BE39F0082DF2F /* Supporting Views */,
-				47E2A1A72578D02F007952C8 /* SwiftUI_WeatherApp.swift */,
-				47E2A1A92578D02F007952C8 /* ContentView.swift */,
-				47E2A1AB2578D031007952C8 /* Assets.xcassets */,
-				47E2A1B02578D031007952C8 /* Info.plist */,
 				47E2A1AD2578D031007952C8 /* Preview Content */,
-				47E3CCF42590EAD00037B6E9 /* JapanTravelApp.swift */,
+				4750B98A2592506C000B6634 /* Support Files */,
 			);
 			path = "SwiftUI-Weather";
 			sourceTree = "<group>";

@@ -15,7 +15,48 @@ struct JapanTravelApp: View {
                 }
                 .padding(.leading, 30)
             }
-            .padding(.top, 20)
+            .padding(.top, 15)
+            
+            VStack {
+                
+                Text("Japanese Food")
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        FoodSelectedCard1()
+                        
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.gray)
+                            VStack {
+                                Image("Roman")
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                    .cornerRadius(25)
+                                Text("Ramen")
+                                    .font(.system(size: 16, weight: .bold, design: .rounded))
+                                    .padding(.top, 10)
+                            }
+                        }
+                        .frame(width: 110, height: 140)
+                        
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.gray)
+                            VStack {
+                                Image("Sushi2")
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                    .cornerRadius(25)
+                                Text("Sushi")
+                                    .font(.system(size: 16, weight: .bold, design: .rounded))
+                                    .padding(.top, 10)
+                            }
+                        }
+                        .frame(width: 110, height: 140)
+                    }
+                }
+            }
             
             Spacer()
         }
@@ -145,6 +186,33 @@ struct Card3: View {
                     .font(.system(size: 16, weight: .regular, design: .rounded))
             }
             .offset(x: -20.0, y: 110.0)
+        }
+    }
+}
+
+struct FoodSelectedCard1: View {
+    var body: some View {
+        ZStack {
+            VStack {
+                Text("")
+            }
+            .frame(width: 100, height: 140)
+            .background(Color(#colorLiteral(red: 0.9327170849, green: 0.9271724224, blue: 0.9369792342, alpha: 1)))
+            .cornerRadius(20)
+            .shadow(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)).opacity(0.2), radius: 20, x: 0, y: 20)
+            .offset(y: 8)
+            
+            VStack {
+                Image("Sushi1")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                Text("Sushi")
+                    .font(.system(size: 16, weight: .bold, design: .rounded))
+                    .padding(.top, 10)
+            }
+            .frame(width: 110, height: 140)
+            .background(Color.white)
+            .cornerRadius(20)
         }
     }
 }

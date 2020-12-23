@@ -9,59 +9,9 @@ struct JapanTravelApp: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    ZStack {
-                        Image("Mountain1")
-                            .resizable()
-                            .frame(width: 250, height: 350)
-                            .cornerRadius(20)
-                        
-                        VStack(alignment: .leading, spacing: 5) {
-                            Text("Mount Fugi")
-                                .foregroundColor(.white)
-                                .font(.system(size: 22, weight: .bold, design: .rounded))
-                            
-                            Text("Fuginomiya, Japan")
-                                .foregroundColor(.white)
-                                .font(.system(size: 16, weight: .regular, design: .rounded))
-                        }
-                        .offset(x: -20.0, y: 110.0)
-                    }
-                    
-                    ZStack {
-                        Image("Mountain1")
-                            .resizable()
-                            .frame(width: 250, height: 350)
-                            .cornerRadius(20)
-                        
-                        VStack(alignment: .leading, spacing: 5) {
-                            Text("Mount Fugi")
-                                .foregroundColor(.white)
-                                .font(.system(size: 22, weight: .bold, design: .rounded))
-                            
-                            Text("Fuginomiya, Japan")
-                                .foregroundColor(.white)
-                                .font(.system(size: 16, weight: .regular, design: .rounded))
-                        }
-                        .offset(x: -20.0, y: 110.0)
-                    }
-                    
-                    ZStack {
-                        Image("Mountain1")
-                            .resizable()
-                            .frame(width: 250, height: 350)
-                            .cornerRadius(20)
-                        
-                        VStack(alignment: .leading, spacing: 5) {
-                            Text("Mount Fugi")
-                                .foregroundColor(.white)
-                                .font(.system(size: 22, weight: .bold, design: .rounded))
-                            
-                            Text("Fuginomiya, Japan")
-                                .foregroundColor(.white)
-                                .font(.system(size: 16, weight: .regular, design: .rounded))
-                        }
-                        .offset(x: -20.0, y: 110.0)
-                    }
+                    Card1()
+                    Card2()
+                    Card3()
                 }
             }
             
@@ -128,5 +78,71 @@ struct Categories: View {
             Spacer()
         }
         .padding(.horizontal, 30)
+    }
+}
+
+struct Card1: View {
+    var body: some View {
+        ZStack {
+            Image("Mountain1")
+                .resizable()
+                .frame(width: 250, height: 350)
+                .cornerRadius(20)
+            
+            VStack(alignment: .leading, spacing: 5) {
+                Text("Mount Fugi")
+                    .foregroundColor(.white)
+                    .font(.system(size: 22, weight: .bold, design: .rounded))
+                
+                Text("Fuginomiya, Japan")
+                    .foregroundColor(.white)
+                    .font(.system(size: 16, weight: .regular, design: .rounded))
+            }
+            .offset(x: -20.0, y: 110.0)
+        }
+    }
+}
+
+struct Card2: View {
+    var body: some View {
+        ZStack {
+            Image("Mountain2")
+                .resizable()
+                .frame(width: 250, height: 350)
+                .cornerRadius(20)
+            
+            VStack(alignment: .leading, spacing: 5) {
+                Text("Mount Fugi")
+                    .foregroundColor(.white)
+                    .font(.system(size: 22, weight: .bold, design: .rounded))
+                
+                Text("Shibuya-ku, Japan")
+                    .foregroundColor(.white)
+                    .font(.system(size: 16, weight: .regular, design: .rounded))
+            }
+            .offset(x: -20.0, y: 110.0)
+        }
+    }
+}
+
+struct Card3: View {
+    var body: some View {
+        ZStack {
+            Image("Mountain3")
+                .resizable()
+                .frame(width: 250, height: 350)
+                .cornerRadius(20)
+            
+            VStack(alignment: .leading, spacing: 5) {
+                Text("Mount Fugi")
+                    .foregroundColor(.white)
+                    .font(.system(size: 22, weight: .bold, design: .rounded))
+                
+                Text("Fuginomiya, Japan")
+                    .foregroundColor(.white)
+                    .font(.system(size: 16, weight: .regular, design: .rounded))
+            }
+            .offset(x: -20.0, y: 110.0)
+        }
     }
 }

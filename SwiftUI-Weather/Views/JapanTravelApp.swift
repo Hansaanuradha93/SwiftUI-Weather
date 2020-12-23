@@ -3,38 +3,16 @@ import SwiftUI
 struct JapanTravelApp: View {
     var body: some View {
         VStack(spacing: 30) {
+            
+            Spacer(minLength: 30)
+            
             Header()
             
             Categories()
             
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 30) {
-                    Card1()
-                    Card2()
-                    Card3()
-                }
-                .padding(.leading, 30)
-            }
-            .padding(.top, 15)
+            Places()
             
-            VStack(alignment: .leading) {
-                
-                Text("Japanese Food")
-                    .padding(.leading, 30)
-                
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 30) {
-                        FoodSelectedCard1()
-                        FoodCard2()
-                        FoodCard3()
-                    }
-                    .frame(height: 200, alignment: .top)
-                    .padding(.leading, 30)
-                }
-                .padding(.top, 15)
-            }
-                        
-            Spacer()
+            FoodSection()
         }
     }
 }
@@ -228,5 +206,40 @@ struct FoodCard3: View {
             }
         }
         .frame(width: 110, height: 140)
+    }
+}
+
+struct FoodSection: View {
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text("Japanese Food")
+                .font(.system(size: 25, weight: .bold, design: .rounded))
+                .padding(.leading, 30)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 30) {
+                    FoodSelectedCard1()
+                    FoodCard2()
+                    FoodCard3()
+                }
+                .frame(height: 200, alignment: .top)
+                .padding(.leading, 30)
+            }
+            .padding(.top, 15)
+        }
+        .padding(.top, 10)
+    }
+}
+
+struct Places: View {
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 30) {
+                Card1()
+                Card2()
+                Card3()
+            }
+            .padding(.leading, 30)
+        }
     }
 }

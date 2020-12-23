@@ -8,12 +8,14 @@ struct JapanTravelApp: View {
             Categories()
             
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
+                HStack(spacing: 30) {
                     Card1()
                     Card2()
                     Card3()
                 }
+                .padding(.leading, 30)
             }
+            .padding(.top, 20)
             
             Spacer()
         }

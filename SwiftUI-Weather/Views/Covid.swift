@@ -4,7 +4,10 @@ struct Covid: View {
     var body: some View {
         VStack {
             HeaderView()
+            
+            Spacer()
         }
+        .padding(.top, 30)
     }
 }
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4718704B257AA63900CDC923 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4718704A257AA63900CDC923 /* WeatherButton.swift */; };
 		4718704F257AAD4600CDC923 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4718704E257AAD4600CDC923 /* Weather.swift */; };
+		473C532725964E3F00BA7B17 /* Covid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C532625964E3F00BA7B17 /* Covid.swift */; };
 		4769CB9F257BDB480082DF2F /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4769CB9E257BDB480082DF2F /* CircleImage.swift */; };
 		4769CBA2257BDCD90082DF2F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4769CBA1257BDCD90082DF2F /* MapView.swift */; };
 		4769CBB8257BE3DE0082DF2F /* stmarylake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4769CBAB257BE3DD0082DF2F /* stmarylake.jpg */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		4718704A257AA63900CDC923 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 		4718704E257AAD4600CDC923 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		473C532625964E3F00BA7B17 /* Covid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid.swift; sourceTree = "<group>"; };
 		4769CB9E257BDB480082DF2F /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		4769CBA1257BDCD90082DF2F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4769CBAB257BE3DD0082DF2F /* stmarylake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stmarylake.jpg; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				47E2A1A72578D02F007952C8 /* SwiftUI_WeatherApp.swift */,
 				47E2A1A92578D02F007952C8 /* ContentView.swift */,
 				47E3CCF42590EAD00037B6E9 /* JapanTravelApp.swift */,
+				473C532625964E3F00BA7B17 /* Covid.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				4718704B257AA63900CDC923 /* WeatherButton.swift in Sources */,
 				4769CB9F257BDB480082DF2F /* CircleImage.swift in Sources */,
 				4769CBDF257BEDBB0082DF2F /* LandmarkRow.swift in Sources */,
+				473C532725964E3F00BA7B17 /* Covid.swift in Sources */,
 				4769CBCB257BE49D0082DF2F /* Data.swift in Sources */,
 				4769CBDB257BED7B0082DF2F /* LandmarkDetail.swift in Sources */,
 			);

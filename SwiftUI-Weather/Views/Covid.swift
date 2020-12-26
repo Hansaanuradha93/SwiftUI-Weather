@@ -7,6 +7,8 @@ struct Covid: View {
             
             LocationView()
             
+            FeelingCardView1()
+            
             Spacer()
         }
         .padding(.top, 30)
@@ -45,7 +47,7 @@ struct HeaderView: View {
 
 struct LocationView: View {
     var body: some View {
-        VStack(spacing: 2) {
+        VStack() {
             HStack {
                 Text("How people feel in")
                     .font(.system(size: 19, weight: .semibold))
@@ -67,9 +69,35 @@ struct LocationView: View {
                 
                 Spacer()
             }
-            .padding(.leading, 36)
+            .padding(EdgeInsets(top: 2, leading: 36, bottom: 0, trailing: 0))
             
         }
         .padding(.top, 40)
+    }
+}
+
+struct FeelingCardView1: View {
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 25)
+                .foregroundColor(Color(#colorLiteral(red: 0.8775878549, green: 0.9517809749, blue: 0.9284226298, alpha: 1)))
+            VStack {
+                Image("Smile")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 50, height: 50)
+                
+                Text("458")
+                    .font(.system(size: 28, weight: .semibold))
+                    .foregroundColor(Color(#colorLiteral(red: 0.1834032536, green: 0.4978134632, blue: 0.4372903705, alpha: 1)))
+                    .padding(.top, 10)
+                
+                Text("Feeling well")
+                    .font(.system(size: 16, weight: .medium))
+                    .foregroundColor(Color(#colorLiteral(red: 0.1834032536, green: 0.4978134632, blue: 0.4372903705, alpha: 1)))
+            }
+            
+        }
+        .frame(width: 130, height: 180)
     }
 }

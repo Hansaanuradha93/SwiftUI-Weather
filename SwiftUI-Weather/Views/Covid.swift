@@ -2,16 +2,24 @@ import SwiftUI
 
 struct Covid: View {
     var body: some View {
-        VStack {
-            HeaderView()
-            
-            LocationView()
-            
-            CardViews()
-            
-            Spacer()
+        ZStack {
+            Color(#colorLiteral(red: 0.2676861286, green: 0.2773749828, blue: 0.6787461042, alpha: 1)).edgesIgnoringSafeArea(.all)
+            VStack {
+                HeaderView()
+                
+                LocationView()
+                
+                CardViews()
+                
+                Spacer()
+            }
+            .frame(maxWidth: .infinity)
+            .frame(height: 600)
+            .padding(.top, 60)
+            .background(Color(.white))
+            .cornerRadius(40)
+            .offset(y: -120)
         }
-        .padding(.top, 30)
     }
 }
 

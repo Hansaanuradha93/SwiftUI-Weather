@@ -7,7 +7,7 @@ struct Covid: View {
             
             LocationView()
             
-            FeelingCardView1()
+            CardViews()
             
             Spacer()
         }
@@ -99,5 +99,40 @@ struct FeelingCardView1: View {
             
         }
         .frame(width: 130, height: 180)
+    }
+}
+
+struct FeelingCardView2: View {
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 25)
+                .foregroundColor(Color(#colorLiteral(red: 0.8817955852, green: 0.7082685828, blue: 0.7740106583, alpha: 1)))
+            VStack {
+                Image("Sad")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 50, height: 50)
+                
+                Text("458")
+                    .font(.system(size: 28, weight: .semibold))
+                    .foregroundColor(Color(#colorLiteral(red: 0.4108697176, green: 0.3345546126, blue: 0.3271756768, alpha: 1)))
+                    .padding(.top, 10)
+                
+                Text("Not well")
+                    .font(.system(size: 16, weight: .medium))
+                    .foregroundColor(Color(#colorLiteral(red: 0.4108697176, green: 0.3345546126, blue: 0.3271756768, alpha: 1)))
+            }
+            
+        }
+        .frame(width: 130, height: 180)
+    }
+}
+
+struct CardViews: View {
+    var body: some View {
+        HStack(spacing: 30) {
+            FeelingCardView1()
+            FeelingCardView2()
+        }
     }
 }
